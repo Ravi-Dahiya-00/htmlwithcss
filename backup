@@ -1,0 +1,36 @@
+</DOCTYPE html>
+<!-- start tag seen without seeing a doctype first. -->
+
+<!-- to write all these doctype html lang just press shift + exclamanition mark -->
+<html lang="en">
+  <!-- lang="eng" is used to declare the language of this document -->
+<section1>
+  
+  <head>
+    
+    <meta charset="UTF-8" >
+    <!-- this meta is used because the character encoding was not declared. 
+     UTF-8 is a widely supported and versatile encoding standard that covers almost all characters and symbols in the world.
+     This declaration informs the browser of the character encoding used in the document, ensuring correct rendering of characters and symbols.-->
+
+
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+
+    <title>
+      this is my first web page
+      
+</title>
+    <!-- this line is used for heading on the top of the web page that will not be displayed on the web page but it will displayed on the top
+      of the webpage as a heading of website -->
+
+
+      <link rel="icon" href="img.png" type="image/icon">
+    
+     <!-- link is used to link some other language file into it to make it better and rel is relation href is hypertext refrence 
+      it’s an HTML attribute used to create a link to another page, file, email address, or location within the same page. -->
+
+
+                                                                      
+    </head>
+                                                                    
