@@ -13,7 +13,7 @@
      This declaration informs the browser of the character encoding used in the document, ensuring correct rendering of characters and symbols.-->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title></title>
   <!-- this line is used for heading on the top of the web page that will not be displayed on the web page but it will displayed on the top
       of the webpage as a heading of website -->
 
@@ -84,7 +84,7 @@
 <!-- this strong is used for bolding the line -->
 
   </p>
-</section1>
+</section1 id="Hello">
      <!-- this section tag is used for defining different sections such as heading,paragraphs,ending etc. 
       this tag made easy to identify faster things in browser. -->
 
@@ -107,7 +107,7 @@
  
 
 
-  &lt;&lt;&lt; &copy; Ravi Yadav &gt;&gt;&gt;
+  &lt;&lt;&lt; &copy; <a href="aboutme.html">Ravi Yadav</a> &gt;&gt;&gt;
 <!-- >>>&lt is for lesser then symbol , &gt is for greater then symbol and &copy is copyright symbol -->
 
 <h3>My Daily Routine</h3> 
@@ -122,6 +122,11 @@
   >>>The list items are defined using the <li> tag, which can be nested inside the <ol> tag.
    >>> The list items can contain any content, including text, images, and other HTML elements.
    >>> it is ordered list. -->
+
+
+
+   <ul></ul>
+   <!-- this is unordered tag used this starts with dot it does not give numbering to the list. -->
 
     <h3>place i'd like to visit</h3>
 <p><li>i have heared good about sunsrise at ocean in mumbai.</li>
@@ -156,16 +161,28 @@
 
 <p><a href="https://www.example.com">Visit Example.com</a></p>
 
-Example 2: Linking to an internal section
+<!-- Example 2: Linking to an internal section -->
 
-><a href="#section1">Go to Section 1</a>
+<a href="#section1">Go to Section 1</a>
 
-<p>Example 3: Linking to an email address
 
-<a href="mailto:user@example.com">Contact us</a> </p>
+<nav>
+  <ul>
+    <li>
+      <a href="#Hello">Daily routine</a>
+      <!-- but to link this type we must have an a valid id -->
+    </li>
+  </ul>
+</nav>
+<!-- Example 3: Linking to an email address -->
+
+<p><a href="mailto:user@example.com">Contact us</a> </p>
+
+<!-- example 4 : -->
+<p><a href="#">back to top</a></p>
+
 <hr>
 <a href="img.png">click here for new web page</a>
 <p><a href="python.py">click for python code</a></p>
-
   </body>
 </html>
