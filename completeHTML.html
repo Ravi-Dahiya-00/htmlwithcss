@@ -114,12 +114,12 @@ They are composed of tags, which include an opening tag, content (optional), and
         >>>The list items are defined using the <li> tag, which can be nested inside the <ol> tag.
          >>> The list items can contain any content, including text, images, and other HTML elements.
          >>> it is ordered list. -->
-      
+
          <!--this should be step wise . it cannot be written according to our choice. -->
      
-     
-     
-     
+
+
+
          <ul>
              <li>eat</li>
              <li>code</li>
@@ -319,7 +319,7 @@ They are composed of tags, which include an opening tag, content (optional), and
             <p>find is interchange in block and inline element is present</p>
 
 
-            
+
             <div style="background-color: blueviolet; display: inline ;">this is converted from block element to inline element.</div>
 
 
@@ -354,10 +354,83 @@ They are composed of tags, which include an opening tag, content (optional), and
 
      <table border="1">
         <thead>
-            <th></th>
-            <th></th>
-            <th></th>
+            <!-- The thead element is used to group header content in an HTML table. -->
+            <th>Student ID</th>
+            <th>Student Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+            <!-- The th element is used to define a header cell in a table. -->
         </thead>
+
+        <tbody>
+            <!-- The tbody element is used to group the body content in an HTML table. -->
+       <tr>
+        <td>123456</td>
+        <td>Vipin</td>
+        <td>Male</td>
+        <td>17</td>
+       </tr>
+
+      
+       <tr>
+        <td>10001</td>
+        <td>harsh</td>
+        <td>Rather not Say</td>
+        <td rowspan="2">18</td>          
+            <!--  The td element is used to define a data cell in a table. -->
+       </tr>
+                         <!-- this rowspan will extend the same data in how many rows we want to expand the data. -->
+       
+       <tr>
+        <td>123678</td>
+        <td>Ankit</td>
+        <td>FeMale</td>
+       </tr>
+
+    
+
+       <tr>
+        <td>1234365436</td>
+        <td>Deepchand</td>
+        <td colspan="2">Custom</td>
+       </tr>
+                        <!-- this colspan will extend coloumn upto how much column we want to expand. -->
+    </tbody></tbody>
+     </table>
+
+
+
+     <table border="1">
+<thead><th>123451</th>
+<th>254re32</th>
+<th>33e3e</th>
+<th>4321342</th>
+<th>53423</th>
+</thead>
+
+<tbody><tr><td>63334</td>
+<td>7341342</td>
+<td>833132</td>
+<td>91323</td>
+<th rowspan="3">founder</th></tr></tbody>
+
+
+<tr><td>12345234</td>
+<td>234t123</td>
+<td>2342334</td>
+<td>23ty45</td></tr>
+
+<tr><td>123456</td>
+<td>234567</td>
+<td>123456</td>
+<td>12345</td></tr>
+
+<tfoot>
+    <tr>
+        <td colspan="3">hello</td>
+        <td>qwerty</td>
+    </tr></tfoot>
+
      </table>
 
 
