@@ -20,7 +20,7 @@ Hypertext Markup Language (HTML). An HTML tag is composed of:
 >>>>A closing tag, which marks the end of the element
 
 
-The basic structure of an HTML tag is <tagname>Content...</tagname>. Tags can be divided into four categories:
+The basic structure of an HTML tag is     <tagname>......Content.......</tagname>. Tags can be divided into four categories:
 
 1. Structural tags: Define the overall structure of the document, such as <html>, <head>, and <body>.
 2. Semantic tags: Provide meaning to the content, such as <header>, <nav>, <main>, <section>, and <article>.
@@ -55,9 +55,10 @@ They are composed of tags, which include an opening tag, content (optional), and
      <!DOCTYPE html>    <!-- <!DOCTYPE html> is the method to declare html5    -->
      <html lang="en">   <!--   html is working as root element for all the content written between it. -->
      
-     <head>       <!-- head tag is used for defining meta data , seo and title. 
+     <head>
+                  <meta charset="UTF-8">       <!-- head tag is used for defining meta data , seo and title. 
                   meta can define description, author,stylesheet and many more.-->
-         <meta charset="UTF-8">
+         
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <title>Document</title>
      </head>
@@ -69,7 +70,7 @@ They are composed of tags, which include an opening tag, content (optional), and
          <h4>this is forth heading</h4>
          <h5>this is fifth heading</h5>
          <h6>this is sixth heading</h6>
-                       <!-- after h6 tag all h7,8 tags are behaved as paragraph tag -->
+                       <!-- after h6 tag all h7,h8 tags are behaved as paragraph tag -->
      
      
      
@@ -77,7 +78,8 @@ They are composed of tags, which include an opening tag, content (optional), and
                        <a href="https://www.youtube.com/">youtube.com</a>
      <!-- >>>The HTML <a> tag defines a hyperlink, which is used to link from one page to another.
        >>>The <a> tag also supports global attributes in HTML, such as id, class, style, and title.
-         >>>The href attribute can be used to link to external pages, internal sections on the same page (using an empty fragment like href="#top"), or email addresses.
+         >>>The href attribute can be used to link to external pages, internal sections on the same page
+                (using an empty fragment like href="#top"), or email addresses.
          -->
      
          <!-- Example 1: Linking to an external page-->
@@ -102,7 +104,8 @@ They are composed of tags, which include an opening tag, content (optional), and
      <!-- there are three types of lists. 
       1. ordered list
       2. unordered list
-      3. description list-->
+      3. description list
+                -->
      
       <ol>
          <li>EAT</li>
@@ -127,17 +130,22 @@ They are composed of tags, which include an opening tag, content (optional), and
              <li>REPEAT</li>
          </ul>
          <!-- this is unordered list tag used this starts with dot it does not give numbering to the list. -->
+               
+         <!-- this can be written randomly. -->
+
+
+
      <!-- ol>li*3 this is shortcut to get faster three list items -->
      
-     <!-- this can be written randomly. -->
+     
      
      
      
      
      
      <dl>
-         <h3>places i want to avoid</h3>
-       <h4><dt>north pole </dt></h4>
+         <p>places i want to avoid</p>
+       <dt>north pole </dt>
        <dd>i hear this is <strong>cold!</strong></dd>
        <h4><dt>south pole</dt></h4>
        <dd>this is also <strong>cold!</strong></dd>
@@ -152,8 +160,8 @@ They are composed of tags, which include an opening tag, content (optional), and
      
      
          <table>
-                 <tr>
-                     <td>Sr. No.</td>
+                  <tr>                      <!--table row       -->
+                     <td>Sr. No.</td>       <!-- Table Data Cell --> 
                      <td>Name</td>
                      <td>Marks</td>
                  </tr>
@@ -265,7 +273,7 @@ They are composed of tags, which include an opening tag, content (optional), and
      </p>
 
      <h1>when i use h1+h2 tag i get both h1 and h2 tags.</h1>
-     <h2></h2>
+     <h2>these are shortcuts that save our time like h1 + h2 </h2>
 
 
      <p>this is used to write direct into the paragraph p{what we want to write}</p>
@@ -279,19 +287,19 @@ They are composed of tags, which include an opening tag, content (optional), and
 
 <p id="para1"></p>  
     <!-- to make the id we use p#para1 -->
+
+
 <article id="article1"></article> 
    <!-- to make the id we use article#article1  -->
-
 
 
    <p class="para"></p>
 <!-- to make the class we use p.para -->
 
 
-
 <div>this tag doesn't provide any meaning . 
     it is used only for making different sections in big codes . 
-    we can vreate small-small oarts of the code by this tag</div>
+    we can create small-small parts of the code by this tag</div>
     <div class="container">used to make a container div.container</div>
 
 
@@ -348,11 +356,8 @@ They are composed of tags, which include an opening tag, content (optional), and
 
 
 
-
-
 <!-- let's start Tables in HTML -->
-
-     <table border="1">
+<table border="1">           <!-- this border tells us the width of the border -->
         <thead>
             <!-- The thead element is used to group header content in an HTML table. -->
             <th>Student ID</th>
@@ -394,7 +399,7 @@ They are composed of tags, which include an opening tag, content (optional), and
         <td>Deepchand</td>
         <td colspan="2">Custom</td>
        </tr>
-                        <!-- this colspan will extend coloumn upto how much column we want to expand. -->
+                        <!-- this colspan will extend column upto how much column we want to expand. -->
     </tbody></tbody>
      </table>
 
