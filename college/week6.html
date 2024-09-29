@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+
+.logo {
+    
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    margin-right: auto;
+}
+
+.header-bar {
+    width: 20%;
+    height: 10px;
+    
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 20px;
+    background-color: aqua;
+}
+
+.nav-buttons a {
+    padding: 10px 20px;
+    
+    color: white;
+    
+    margin: 5px;
+}
+
+.main {
+    display: flex;
+    flex-grow:1;
+}
+
+.navigation {
+    width: 200px;
+    background-color:grey;
+    padding: 20px;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: aqua;
+    border: 5px solid;
+    text-align: justify;
+}
+
+footer {
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+button{
+    background-color: grey;
+}
+.deloperator{
+    border: 5px solid;
+    border-color: red;
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="deloperator">
+    <div class="container">
+        
+        <header>
+            <div class="logo"><img src="image copy.png" width="100px" alt="img"></div>
+            <div class="header-bar"></div>
+            <div class="search-bar"><input type="text" placeholder="Search..."></div>
+            <div class="nav-buttons">
+                <a href="https://www.html.com"><button>HTML</button></a>
+                <a href="https://www.python.com"><button >PYTHON</button></a>
+                <a href="https://www.javascript.com"><button>JAVASCRIPT</button></a>
+                <a href="https://www.instagram.com/mr_marwal_/?hl=en"><button>CONTACTS</button></a>
+            </div>
+        </header>
+
+        
+        <div class="main">
+            <nav class="navigation">
+                
+                    <label for="selector1"><li>CODE</li></label>
+                        <select name="select" id="selector1">
+                        <option value="select">Tutorial</option>
+                        <option value="select"><a href="https://www.w3schools.com/"><code>learn</code>_CODE</a></option>
+                        <option value="select">HTML</a></option>
+
+                        <option value="select"><a href="https://www.javascript.com">JAVA</a></option>
+                        <br>
+                    <button value="select">submit</button>
+                    
+                    <label for="selector2"></label>
+                        <select name="select2" id="selector2">
+                        <option value="select2">tutorial</option>   
+            </nav>
+            
+            <section class="content">
+                <p><li>HTML (HyperText Markup Language) HTML is the backbone of any web page. It defines the structure and layout of a web page using elements like headings, paragraphs, lists, links, images, and more. HTML elements are represented by tags.</li></p>
+                <p><li>CSS is used to style and layout web pages. It allows you to control the appearance of HTML elements, including colors, fonts, spacing, and positioning. CSS can be applied directly within HTML using the style attribute, embedded within a style tag in the HTML.
+                <p><li>JavaScript is a programming language that adds interactivity and dynamic behavior to web pages. It can be used to manipulate HTML and CSS, respond to user actions, validate forms, create animations, and much more. JavaScript runs in the browser and can interact with the Document Object Model (DOM) to update the content and style of a web page in real-time.</li></p>
+            </section>
+        </div>
+
+        
+        <footer>
+           <button><a href="https://www.youtube.com"></a>code</button>  
+        </footer>
+    
+
+    
+</body>
+</html>
