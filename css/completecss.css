@@ -1,0 +1,48 @@
+/* css - “Cascading Style Sheets” */
+
+
+/* three time of css is there :
+1. inline css: css with every tag by using style attribute in between the tag.
+2. internal css: css can be done by providing a style tag in the head. in this name the tag which we want to do css 
+                    h1{ color: green;}|
+3. external css: css can be done by making a new file by giving name to that with extension .css and 
+linking that file in html page by using link tag.
+
+order of importance: inline>internal>external
+if we want to give more importance to external or internal we can use !important .*/
+
+
+/* selector: we can do css for many types.
+1. Element: h1,p,article, section
+            in this we can do directly by using
+                p{ color:green;}
+2. ID : we can assign a id to a element or a tag and we can do css with the help of id
+            in this we have to put # in front of the css
+            #id{ color: green;}
+3. class: we can assign a class to one or more tags and we can do css of all the tags one time.
+            in this we have to put a dot . in front of the class
+            .class{ color: green;}
+4. group: style multiple elements using comma ,
+            p,h1{ color : green;}
+            p.paraclass{ color: green;} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* font and colors: */
+
+
+
+
