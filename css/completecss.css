@@ -35,7 +35,10 @@ if we want to give more importance to external or internal we can use !important
 
 
 
-
+*{
+    margin: 10px; 
+    /* this is universal selector what we will style will be applied to complete web-page  */
+}
 
 
 
@@ -43,6 +46,203 @@ if we want to give more importance to external or internal we can use !important
 
 /* font and colors: */
 
+
+
+    /* fonts */
+
+p{
+
+    /* font-style: italic; */  /* text in italic words */
+    font-family: cursive;     /*  text in cursive writing*/
+    font-size: 20px;          /* size of the letters */
+    font-weight: 800;         /* dark the text */
+    line-height: 50px;      /* gap between two lines */
+}            
+   
+
+#head1{
+    background-color: red;
+    width: 350px;             /* max width of background color or of the specific area this tag will cover.  */
+    height: 100px;             /* to increase the height of head tag */
+
+}
+
+
+#span1{
+    background-color: rgb(224, 219, 224);
+    color: rgb(248, 72, 14);
+    width: 350px;
+    height: 300px;
+}
+
+    /* colors */
+
+#firstpara{
+    background-color: aqua;
+    color: brown;
+    width: 350px;
+    
+
+}
+
+#secondpara{
+     background-color: rgb(238, 52, 52) ;
+     width: 350px;
+}
+
+#thirdpara{
+    background-color:rgba(45, 184, 189 ) ;
+    width: 350px;
+}
+
+.firstclass{
+    background-color: #528a9d;
+}                                                                                                                                          
+
+#fourpara{
+             background-color: hsl(10, 68%, 67%); 
+             width: 350px;  
+}                              
+
+
+
+
+
+/* border: */
+
+#para1{
+background-color: aliceblue;
+border-style: dashed;
+border-width: 3px;
+border-color: brown;
+border-radius: 10px;                    /* to curve the border or rounded from the corners. */
+border-top-left-radius: 30px;           /*  to just make one corner rounded */
+border-bottom: green 5px solid;       /* to make border only on one direction */
+/* border: solid brown 3px; */      /* this is short form for making border. */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* css box model  */
+/* consist of 4 parts:
+    1.content
+    2.padding
+    3.border
+    4.margin*/
+
+
+
+
+    #para2{
+        background-color: bisque;
+        border: solid brown 3px;
+        width: 450px;
+        padding: 50px;                   /* space between the border and the content. */
+        margin: 50px;                    /* it is the space between two boxes */
+        padding-left: 20px;
+        padding-right: 40px;
+        padding-top: 40px;
+        padding: 10px 20px 30px 40px;     /*top,right,bottom,left  */
+        padding: 20px 40px;              /* 20 for top 40 for bottom */
+        }
+        
+
+        #para3{
+            background-color: aqua;
+            border: solid rgb(42, 165, 104) 3px;
+            /* margin: 30px; */
+            margin-top: 40px;
+            margin-left: 50px;
+            margin-bottom: 40px;
+            margin-right: 50px;
+            }
+         
+
+
+
+
+/* learn box sizing */
+
+
+
+
+
+
+/* css display model */
+
+/* 1.block element:
+                properties:
+          1. starts with new line
+          2.width from extreme left to right of the screen
+          3. it changes with given width or height.
+          4. also changes with margin and padding. */
+
+
+          #blockdiv1{
+            border: 2px red solid;
+            width: 300px;
+            height: 200px;
+            margin: 25px;
+            padding: 50px;
+          }
+
+
+/*  2. Inline Elements: 
+            properties:
+        1. Try to come in same line if width is present in same line.
+        2. width will be only taken upto the content.
+        3. it does not changes with given width and height.
+        4. custom margins can be applied only in horizontal direction but padding can be  applied every where.*/
+
+
+
+
+        #inlinespan1{
+            border: 2px green solid;
+            width: 800px;
+            height: 500px;
+            margin: 50px;
+            padding: 50px;
+        }
+
+
+
+
+
+        #inlinespan2{
+            display: block;
+            border: 2px rgb(112, 91, 142) solid;
+            width: 250px;
+            height: 70px;
+            margin: 50px;
+            padding: 50px;
+        }
+
+    .blockinline1{
+        display: inline;
+        border: 2px rgb(112, 91, 142) solid;
+        width: 50px;
+        height: 70px;
+        margin: 50px;
+        padding: 50px;
+    }
+
+    .blockinline2{
+        display: inline;
+        border: 2px rgb(112, 91, 142) solid;
+        width: 50px;
+        height: 70px;
+        margin: 50px;
+        padding: 50px;
+    }
 
 
 
