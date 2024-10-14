@@ -36,7 +36,8 @@ if we want to give more importance to external or internal we can use !important
 
 
 *{
-    margin: 10px; 
+    margin: 0px; 
+    padding: 0px;
     /* this is universal selector what we will style will be applied to complete web-page  */
 }
 
@@ -226,6 +227,8 @@ border-bottom: green 5px solid;       /* to make border only on one direction */
             padding: 50px;
         }
 
+
+
     .blockinline1{
         display: inline;
         border: 2px rgb(112, 91, 142) solid;
@@ -241,8 +244,143 @@ border-bottom: green 5px solid;       /* to make border only on one direction */
         width: 50px;
         height: 70px;
         margin: 50px;
-        padding: 50px;
+        padding: 50px; 
     }
 
 
 
+
+
+
+
+
+
+/* css position property */
+
+
+
+    .imgcontainer{
+        border: 5px solid black;
+        height: 1500px;
+        background-color: aqua;
+    }
+
+
+    img{
+        margin: 20px;
+    }
+
+
+
+    .imgcontainer2{
+        position: relative;            /* this position relative makes that we can change the position of the elements. */  
+        /* position: absolute; */
+        top: 90px;
+        left: 70px;  
+        right: 400px;
+        bottom: 40px;      
+    }
+
+    .imgcontainer1{
+        position: fixed; 
+        width: 300px;           /*  this fill fix the position of the object on the entire page         */
+    }
+
+
+    /* this relative means i am positioning  the object accordingly to current windows.*/
+
+    /* the space of the object where it was first it will be maintained. */
+    /* .while position is absolute the space will not be maintained it will be covered by next object.  */
+
+
+    .imgcontainer2{
+        position: sticky;
+        top: 30px;
+        left: 100px;
+    }
+
+    /* this position will also be fixed like fixed position but this will only remain fixed upto the parent 
+        container that is div function here.
+        
+        but in fixed it reamins on complete page like we see home page.*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* css size units: */
+
+
+
+    .units1{
+        border: 2px solid red;
+        width: 50%;                        /*this 50 % is according to its parent container.  */  
+    }
+
+
+
+
+    .unitsparent1{
+        background-color: beige;
+        border: 2px green solid;
+        width: 50%;                     /* first this will be done in 50% according to its parent that is body. */
+    }
+
+    .unitschild1{
+        background-color: aqua;
+        border: 2px red solid;
+        width: 50%;                       /* now this will be 50% of its parent that is units parent1. */
+    }
+
+
+
+    .vhcontainer1{
+        background-color: #528a9d;
+        height: 100vh;                       /* this will take the complete height space of the viewport.  */
+        width: 50vw;                         /* this will give half to the width */
+    }
+
+    
+
+
+
+    /* pixels. */
+
+    .pixelscontainer1{
+        border: 2px violet solid;
+        font-size: 50px;
+    }
+
+
+
+
+
+
+    .wrapper1{
+        font-size: l;
+    }
+
+    .boxpx{
+        width: 200px;
+    }
+
+    .boxem{
+            width: 200em;
+    }
+
+    .boxvw{
+        width: 100vw;
+    }
+
+    .rem{
+        border: 2px red solid;
+        font-size: 5rem;
+    }
