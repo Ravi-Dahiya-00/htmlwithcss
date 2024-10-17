@@ -1,0 +1,588 @@
+<!-- MDN website is best for all the documentation of HTML. -->
+
+<!-- ctrl + / is used to comment the line -->
+
+
+
+<!-- html is used for labelling our website and define the structure of a website. -->
+<!-- anything written between this < > is known as tag. -->
+
+
+
+
+
+ <!-- what are tags in html
+HTML tags are the fundamental building blocks of a web page, used to define the structure and content of a document written in 
+Hypertext Markup Language (HTML). An HTML tag is composed of:
+
+>>>>An opening tag, which marks the beginning of an element
+>>>>Content, which is the information or structure within the element
+>>>>A closing tag, which marks the end of the element
+
+
+The basic structure of an HTML tag is     <tagname>......Content.......</tagname>. Tags can be divided into four categories:
+
+1. Structural tags: Define the overall structure of the document, such as <html>, <head>, and <body>.
+2. Semantic tags: Provide meaning to the content, such as <header>, <nav>, <main>, <section>, and <article>.
+3. Presentational tags: Control the appearance of the content, such as <b>, <i>, <u>, and <font> (although these are deprecated and should be avoided).
+4. Interactive tags: Create interactive elements, such as <a> for hyperlinks and <form> for submitting data. -->
+
+
+<!-- tag is a special word used to define the structure,meaning and formatting of the webpage. -->
+
+
+
+
+
+
+
+
+
+
+    <!-- what are elements in html??
+
+HTML elements are the building blocks of an HTML document, providing structure, semantics, and formatting to the content. 
+They are composed of tags, which include an opening tag, content (optional), and a closing tag (except for self-closing or void elements).
+ Elements can contain formatting instructions, semantic meaning, and content. -->
+
+
+<!-- <h1> opening tag 
+     </h1> closing tag -->
+
+
+
+
+     <!DOCTYPE html>    <!-- <!DOCTYPE html> is the method to declare html5    -->
+     <html lang="en">   <!--   html is working as root element for all the content written between it. -->
+     
+     <head>
+                  <meta charset="UTF-8">       <!-- head tag is used for defining meta data , seo and title. 
+                  meta can define description, author,stylesheet and many more.-->
+         
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Document</title>
+     </head>
+     <body>     <!-- in this body we will define all the data that is displayed on the website to the user.  -->
+         <h1>this is first heading</h1>
+         <!-- this h1 is used for making the main heading of the body and the paragraph. -->
+         <h2>this is second heading</h2>
+         <h3>this is third heading</h3>
+         <h4>this is forth heading</h4>
+         <h5>this is fifth heading</h5>
+         <h6>this is sixth heading</h6>
+                       <!-- after h6 tag all h7,h8 tags are behaved as paragraph tag -->
+     
+     
+     
+     
+                       <a href="https://www.youtube.com/">youtube.com</a>
+     <!-- >>>The HTML <a> tag defines a hyperlink, which is used to link from one page to another.
+       >>>The <a> tag also supports global attributes in HTML, such as id, class, style, and title.
+         >>>The href attribute can be used to link to external pages, internal sections on the same page
+                (using an empty fragment like href="#top"), or email addresses.
+         -->
+     
+         <!-- Example 1: Linking to an external page-->
+     
+     <p><a href="https://www.example.com">Visit Example.com</a></p>
+     
+     <!-- Example 2: Linking to an internal section -->
+     
+     <a href="#section1">Go to Section 1</a>
+     
+     <!-- Example 3: Linking to an email address -->
+
+<p><a href="mailto:user@example.com">Mail us</a> </p>
+
+
+     <!-- Example 4: Linking to mobile no. -->
+      <p><a href="tel:9999999999">call us</a></p>
+
+     
+     
+     
+     <!-- there are three types of lists. 
+      1. ordered list
+      2. unordered list
+      3. description list
+                -->
+     
+      <ol>
+         <li>EAT</li>
+      <LI>CODE</LI>
+      <LI>SLEEP</LI>
+      <LI>REPEAT</LI>
+                    </ol>
+      <!-- >>> The <ol> tag is used to create an ordered list, which can be numerical or alphabetical.
+        >>>The list items are defined using the <li> tag, which can be nested inside the <ol> tag.
+         >>> The list items can contain any content, including text, images, and other HTML elements.
+         >>> it is ordered list. -->
+
+         <!--this should be step wise . it cannot be written according to our choice. -->
+     
+
+
+
+         <ul>
+             <li>eat</li>
+             <li>code</li>
+             <li>SLEEP</li>
+             <li>REPEAT</li>
+         </ul>
+         <!-- this is unordered list tag used this starts with dot it does not give numbering to the list. -->
+               
+         <!-- this can be written randomly. -->
+
+
+
+     <!-- ol>li*3 this is shortcut to get faster three list items -->
+     
+     
+     
+     
+     
+     
+     
+     <dl>
+         <p>places i want to avoid</p>
+       <dt>north pole </dt>
+       <dd>i hear this is <strong>cold!</strong></dd>
+       <h4><dt>south pole</dt></h4>
+       <dd>this is also <strong>cold!</strong></dd>
+       
+        </dl>
+       
+       
+        <!-- <dl>: The outer element that defines the description list.
+       <dt>: Defines a term or label for the description. Typically used for headings or keywords.
+       <dd>: Defines the description or explanation for the term. Can contain text, images, or other HTML elements. -->
+       
+     
+     
+         <table>
+                  <tr>                      <!--table row       -->
+                     <td>Sr. No.</td>       <!-- Table Data Cell --> 
+                     <td>Name</td>
+                     <td>Marks</td>
+                 </tr>
+     
+                 <tr>
+                     <td>1.</td>
+                     <td>Vipin Soni</td>
+                     <td>90</td>
+                 </tr>
+     
+                 <tr>
+                     <td>2.</td>
+                     <td>Deepchand</td>
+                     <td>80</td>
+                 </tr>
+                 <tr>
+                     <td>3.</td>
+                     <td>Vinay Mahla</td>
+                     <td>100</td>
+                 </tr>
+     
+         </table>
+     
+     
+     
+         <img src="https://imgs.search.brave.com/b125XPj0IJ95T1gKRAHX5zA7hGyi7dJ96p0VKcYyGGY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/dHdvLXRvbmUtaW5r/LWNsb3VkLmpwZz93/aWR0aD0xMDAwJmZv/cm1hdD1wanBnJmV4/aWY9MCZpcHRjPTA" height="100px" alt="no Image">
+      
+                <!-- this image tag is used to add a image to the webpage.
+                     src is used for the link of the resource.
+                     alt is used for alternative if image is not shown by src code -->
+     
+     
+     
+     <!-- let's discuss style attribute. -->
+     <h6 style="background-color: aqua;">hello it's background color</h6>
+     <h6 style="color: brown;">hello it's text color</h6>
+     <span style="background-color:red;">hello</span>
+       <!-- this style is used  -->
+     
+       <p>        
+                <!-- this p tag is used for writting paragraph. -->
+         <strong>
+           this is strong line or a bold line
+                             </strong>
+     <!-- this strong is used for bolding the line -->
+      
+     
+       </p>
+     
+     <p>
+         <b>this can also be used to bold the line</b>
+     </p>
+     
+     
+     <p>
+         <em> hello friends this is written in italic words</em>
+         <!-- this em makes your paragrph in italic words.it stands for emphasize-->
+        <!-- <em> is used for semantic purposes (emphasis or importance). -->
+     
+     </p>
+      
+      
+         <p><i>hello</i></p>
+         <!-- <i> is used for presentation purposes (style). -->
+     
+             
+             <p><u>hello</u></p>
+             <!-- this u tag is used to underline the paragraph -->
+     
+             <p><s>hello</s></p>
+             <!-- this s tag is used to strike the paragraph -->
+     
+     
+     
+             <p>
+                 2 <sup>5</sup>
+             </p>
+             <!-- this sup is superscript tag that is used when we want to raise some power of something. -->
+     
+             <p>o 
+                 <sub>2</sub>
+             </p>
+             <!-- this sub is subscript tag that is used when we want to raise some power of something in down. -->
+     
+     
+             <p>this is paragraph and in this paragraph we can write anything under the h1 heading.
+                 <br> when we want to write in new line we use br:
+                 <br>....this will not give spacing between the lines.
+                 <br>....may be it will be used.
+                 <br>...we need to put br with every starting of the line.
+               <!-- br is line breaking tag and it is used when we want to continue the same line and chaange the line.-->
+           </p>
+     
+     
+           <!-- it is opposite to the <br> tag this was line breaking tag.  -->
+     <p>
+            <pre>it     is    quiet    easy      for    spacing  
+             and we can also break the line in between 
+             where we want without using any tag in between
+            </pre>
+           </p>
+      <!-- Preformatted text (pre> tag): Use the <pre> tag to preserve the original formatting, including spaces, within the text. 
+          This method is ideal for displaying code snippets or formatted text. -->
+
+
+
+     <p>
+        <h1>to write both p and h1 tag we write p>h1</h1>
+     </p>
+
+     <h1>when i use h1+h2 tag i get both h1 and h2 tags.</h1>
+     <h2>these are shortcuts that save our time like h1 + h2 </h2>
+
+
+     <p>this is used to write direct into the paragraph p{what we want to write}</p>
+
+
+<p>Lorem ipsum dolor sit amet. <br> lorem+how many characters make a paragraph of that much word we wants.</p> 
+
+
+
+
+
+<p id="para1"></p>  
+    <!-- to make the id we use p#para1 -->
+
+
+<article id="article1"></article> 
+   <!-- to make the id we use article#article1  -->
+
+
+   <p class="para"></p>
+<!-- to make the class we use p.para -->
+
+
+<div>this tag doesn't provide any meaning . 
+    it is used only for making different sections in big codes . 
+    we can create small-small parts of the code by this tag</div>
+    <div class="container">used to make a container div.container</div>
+
+
+
+    <!-- Block Elements:-
+            >>these elements comes in next line.
+            >>takes all the space from left to right by default.
+            >>they takes all the space of the line. -->
+<p>this took complete line if i will start next para it will take new line</p>
+<p>let's see this para is started in new line</p>
+
+<div style="background-color: blueviolet;">this color took all the space so this div is block element.</div>
+
+
+<!-- inline elements:-
+            >>these elements starts in same line .
+            >>they take as much space as much they required in the line.
+        -->
+
+        <span style="background-color: blue;">It can be used to highlight specific words, apply different font sizes, 
+            or add other styling attributes to individual characters or groups of text.</span>
+
+
+
+            <p>find is interchange in block and inline element is present</p>
+
+
+
+            <div style="background-color: blueviolet; display: inline ;">this is converted from block element to inline element.</div>
+
+
+            <ul>
+                <li>
+                    <p><a href=""></a></p>
+                </li>
+                <li>
+                    <p><a href=""></a></p>           
+                </li>
+                <li>
+                    <p><a href=""></a></p>
+                </li>
+            </ul>
+                                                 <!-- to write all this we need to write only ul>(li>P>a)*3 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- let's start Tables in HTML -->
+<table border="1">           <!-- this border tells us the width of the border -->
+        <thead>
+            <!-- The thead element is used to group header content in an HTML table. -->
+            <th>Student ID</th>
+            <th>Student Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+            <!-- The th element is used to define a header cell in a table. -->
+        </thead>
+
+        <tbody>
+            <!-- The tbody element is used to group the body content in an HTML table. -->
+       <tr>
+        <td>123456</td>
+        <td>Vipin</td>
+        <td>Male</td>
+        <td>17</td>
+       </tr>
+
+      
+       <tr>
+        <td>10001</td>
+        <td>harsh</td>
+        <td>Rather not Say</td>
+        <td rowspan="2">18</td>          
+            <!--  The td element is used to define a data cell in a table. -->
+       </tr>
+                         <!-- this rowspan will extend the same data in how many rows we want to expand the data. -->
+       
+       <tr>
+        <td>123678</td>
+        <td>Ankit</td>
+        <td>FeMale</td>
+       </tr>
+
+    
+
+       <tr>
+        <td>1234365436</td>
+        <td>Deepchand</td>
+        <td colspan="2">Custom</td>
+       </tr>
+                        <!-- this colspan will extend column upto how much column we want to expand. -->
+    </tbody></tbody>
+     </table>
+
+
+
+     <table border="1">
+<thead><th>123451</th>
+<th>254re32</th>
+<th>33e3e</th>
+<th>4321342</th>
+<th>53423</th>
+</thead>
+
+<tbody><tr><td>63334</td>
+<td>7341342</td>
+<td>833132</td>
+<td>91323</td>
+<td rowspan="3">123445</td>
+
+<tr><td>12345234</td>
+<td>234t123</td>
+<td>2342334</td>
+<td>23ty45</td>
+</tr>
+
+<tr><td>123456</td>
+<td>234567</td>
+<td>123456</td>
+<td>12345</td></tr>
+
+<tfoot>
+    <tr>
+        <td colspan="3">hello</td>  
+        <td>qwerty</td>
+    </tr></tfoot>
+
+     </table>
+
+
+
+
+
+     <form>
+          
+         <label for="email">Enter Email ID:</label>
+        <input type="text" id="email" placeholder="enter your email">
+        <br>
+        <br>
+        <label for="password">Enter Password</label>
+        <input type="text" id="password" placeholder="enter your password"> 
+        <!-- in label "for" and in input "id" must have same address. -->
+         <!-- placeholder attributes describe the label more briefly inside the input tag. -->
+        <br>
+        <br>
+
+
+        <input type="submit" value="click here" >
+        <button>submit</button>
+        <!-- there are two methods to make a button    input and button -->
+     </form>
+
+
+
+     <form >
+
+        <fieldset>
+            <LEGEND><h3>html form</h3></LEGEND>
+        <label for="datepicker">choose your date of birth:</label>
+        <input type="date" id="datepicker">
+
+<br>
+<br>
+<br>
+
+<label for="selector1">choose your dishes</label>
+      <select name="dishes" id="selector1">
+        <option value="select">select</option>
+      <option value="maggi">maggi</option>
+      <option value="kurkure">kurkure</option>
+      <option value="chips">chips</option></select>
+      <br>
+
+      <button>submit</button>
+
+
+      <br>
+      <br>
+
+      <textarea name="text1" id="text1" cols="10" rows="10" placeholder="enter your feedback......."></textarea>
+     </form>
+    </fieldset>
+
+
+
+
+
+
+
+<!-- input tags in html -->
+
+    <form> 
+        <label for="textfield1">text field</label>
+        <input type="text" name="textfield1" id="textfield1">
+<br><br>
+
+
+        <label for="button1">submit button creation</label>
+        <input type="submit" name="button1" id="button1" value="subscribe">
+
+<br><br>
+
+
+
+
+
+<label for="radio1">Male </label>
+        <input type="radio" name="radio1" id="radio1" >
+
+        <label for="radio2">feMale </label>
+        <input type="radio" name="radio1" id="radio1" >
+
+<label for="radio3">others</label>
+        <input type="radio" name="radio1" id="radio1" >
+
+<!-- to allow only one radio button selection,
+  you need to group the buttons together by giving them the same name attribute in the HTML code. -->
+
+
+
+
+
+
+
+
+
+
+  <br><br>
+  <label for="checkbox1">coffee</label>
+          <input type="checkbox" name="checkbox1" id="checkbox1" >
+
+
+          <label for="checkbox2">chai</label>
+                  <input type="checkbox" name="checkbox2" id="chckbox2" >
+        
+
+                  <br><br>
+
+    <label for="fileselection">choose file :</label>
+    <input type="file" name="file selection" id="=fileselection">
+    </form>
+
+    <br><br>
+
+    <input type="image" name="image button" id="image button" alt="click here" src="img.png"
+    width="40px" height="40px" >
+<!-- to make an image a button -->
+
+    <br>
+    <br>
+
+    <label for="password1">enter password</label>
+    <input type="password" name="password1" id="password1">
+<!-- used to hide the password  -->
+
+
+<br>
+<br>
+
+<label for="datepicker">choose your date of birth:</label>
+        <input type="date" id="datepicker">
+
+
+
+    <section>
+        <h2>Questions with Hidden Answers </h2>
+
+
+        <details>
+            <summary>What is difference between section and div tag??</summary>
+            section: Semantic, indicates a thematic grouping, often with a heading.
+                div: Non-semantic, general-purpose container for styling and layout.
+        </details>
+    </section>
+
+     </body>
+     </html>
