@@ -1,0 +1,49 @@
+.container{
+    background-color: aliceblue;
+    border: 5px black solid;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    height: 1200px;
+    flex-direction: row-reverse;                             /* this will reverse the boxes  */     
+    flex-wrap: wrap;                                          /* this will wrap the box or text accordingly to screen size it will not decrease
+                                                            the width of the box it will wrap it into the new line. */
+    /* justify-content: center;                                  this will move the content in the centre if we use column it will move accordingly  
+                                                            to the vertical direction and if column is used in flex direction then it will move 
+                                                            acoordingly to the horizontal.*/
+
+
+    align-items: center;                                   /*  this will do just the opposite of the justify content*/
+    /* align-items: stretch;                                    this will stretch the items */
+   align-content: start;                                  /*  it will remove the spacing between the items while aligning*/
+
+    /* if we will specify both align itm as centre and justify content as centre it will be at centre of the web page. */
+
+
+}
+
+
+
+.box{
+    height: 200px;
+    width: 200px;
+    border: 2px brown solid;
+    margin: 2px;
+    padding: 2px;
+}
+
+#box1{
+    background-color: aqua;
+}
+
+#box2{
+    background-color: rgb(38, 218, 110);
+}
+
+#box3{
+    background-color: rgb(239, 101, 189);
+}
+
+#box4{
+    background-color: brown;
+}
