@@ -30,20 +30,31 @@
     border: 2px brown solid;
     margin: 2px;
     padding: 2px;
+
 }
 
 #box1{
     background-color: aqua;
+    order: 1;                            /* it will change the order of this box if we want to move it at last we can use -1. */
+    flex-shrink: 4;                      /* this box will shrink 4 times faster as then any other box */
+    flex-grow: 1;                         /* it will make the boxes to take all the space of the container from starting point to ending point */
+                                          
 }
 
 #box2{
     background-color: rgb(38, 218, 110);
+    /* flex-grow: 5;                            it will grow 5x faster when we will flex the screen and also it will be some bigger then any other box. */
 }
 
 #box3{
     background-color: rgb(239, 101, 189);
+    /* flex-grow: 1; */
+    align-self: flex-end;
 }
 
 #box4{
     background-color: brown;
+    flex-grow: 1;
+    flex-basis: 400px;                       /*  we can assign its width*/
+          
 }
