@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: aqua;
+            border: 3px black solid;
+            height: 400px;
+            width: 400px;
+        }
+        
+        @media (min-width:300px) and (max-width:500px) {                /*when the screen size will be in between this 300px and 500px its color will change  */
+            .box{
+                background-color: brown;
+            }
+        }
+
+        
+
+
+
+        .container{
+    background-color: aliceblue;
+    border: 5px black solid;
+    margin: 5px;
+    padding: 10px;
+}
+
+
+    .box{
+    height: 200px;
+    width: 200px;
+    border: 2px brown solid;
+    margin: 2px;
+    padding: 2px;
+    }
+
+
+    #box1{
+        background-color: rgb(154, 51, 23);
+    }
+
+    #box2{
+        background-color: rgb(0, 255, 26);
+    }
+
+    #box3{
+            background-color: rgb(255, 0, 140);
+        }
+
+    #box4{
+            background-color: rgb(88, 28, 201);
+        }
+
+
+        @media (min-width:700px) {
+            .container{
+                flex-direction: row;}
+            }
+            @media (max-width:700px) {
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box">
+        hello friends
+    </div> -->
+
+    <div class="container">
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">box4</div>
+    </div>
+</body>
+</html>
+<!--  -->
