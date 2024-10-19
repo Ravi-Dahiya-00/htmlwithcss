@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* animation is the series of complex movements infinitely. */
+      /* for animation the container position must be relative and box position must be absolute. */
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .container {
+        background-color: aliceblue;
+        border: 5px black solid;
+        width: 1000px;
+        height: 1000px;
+        position: relative;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(10, 34, 55);
+        border-radius: 20px;
+        position: absolute;
+        border: 5px green solid;
+        animation: forwards;
+        animation-name: right;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-direction: alternate;
+      }
+
+      @keyframes right {
+        from {
+          left: 0px;
+        }
+        to {
+          left: 800px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

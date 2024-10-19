@@ -1,0 +1,96 @@
+{
+    "printWidth": 100,               // Increases line width limit to 100 characters for larger monitors.
+    "tabWidth": 2,                   // Keeps indentation at 2 spaces for consistency and compact code.
+    "useTabs": false,                // Uses spaces for indentation instead of tabs.
+    "semi": true,                    // Adds semicolons at the end of statements.
+    "singleQuote": true,             // Uses single quotes for strings.
+    "jsxSingleQuote": false,         // Keeps double quotes for JSX attributes for consistency with HTML.
+    "trailingComma": "all",          // Adds trailing commas where possible (objects, arrays, etc.).
+    "bracketSpacing": true,          // Adds spaces between brackets in objects for readability.
+    "arrowParens": "always",         // Enforces parentheses around arrow function parameters.
+    "endOfLine": "lf",               // Uses LF (line feed) for line endings.
+    "htmlWhitespaceSensitivity": "ignore", // Ignores whitespace sensitivity for HTML formatting.
+    "proseWrap": "preserve",         // Preserves markdown line breaks as originally written.
+    "quoteProps": "consistent",      // Quotes object properties only when necessary for consistency.
+    "embeddedLanguageFormatting": "auto",  // Auto-formats embedded code blocks in HTML, Markdown, etc.
+    "overrides": [
+      {
+        "files": "*.html",
+        "options": {
+          "printWidth": 120,          // Sets line length to 120 for HTML files for clearer tags alignment.
+          "singleQuote": false,       // Uses double quotes for HTML attributes to match HTML standards.
+          "proseWrap": "always"       // Wraps text for readability in HTML files.
+        }
+      },
+      {
+        "files": "*.css",
+        "options": {
+          "printWidth": 100,          // Sets print width for CSS files.
+          "singleQuote": false        // Uses double quotes in CSS files for consistency with standards.
+        }
+      },
+      {
+        "files": "*.json",
+        "options": {
+          "tabWidth": 2,              // Sets tab width to 2 spaces for JSON.
+          "trailingComma": "none"     // Disables trailing commas in JSON for compatibility.
+        }
+      },
+      {
+        "files": "*.md",
+        "options": {
+          "proseWrap": "always",      // Wraps prose in markdown files for better readability.
+          "printWidth": 80,           // Limits line width to 80 characters in markdown files.
+          "singleQuote": false        // Uses double quotes in markdown for consistency with other files.
+        }
+      },
+      {
+        "files": "*.jsx",
+        "options": {
+          "printWidth": 100,          // Increases line width for JSX files.
+          "semi": false               // Removes semicolons for a more modern JavaScript style.
+        }
+      },
+      {
+        "files": "*.vue",
+        "options": {
+          "singleQuote": true,        // Uses single quotes in Vue files for consistency.
+          "bracketSpacing": false,    // Disables bracket spacing in Vue components.
+          "printWidth": 100           // Adjusts print width for Vue components.
+        }
+      }
+    ],
+    "plugins": [
+      "@prettier/plugin-php",         // PHP plugin for formatting PHP files.
+      "@prettier/plugin-ruby",        // Ruby plugin for Ruby formatting.
+      "@prettier/plugin-xml"          // XML plugin for XML and related files formatting.
+    ],
+    "typescript": {
+      "singleQuote": true,            // Forces single quotes in TypeScript files.
+      "trailingComma": "none",        // Removes trailing commas for compatibility in TypeScript.
+      "bracketSpacing": true          // Adds bracket spacing in TypeScript files.
+    },
+    "json": {
+      "tabWidth": 2,                  // Sets indentation to 2 spaces in JSON files.
+      "trailingComma": "none"         // Disables trailing commas in JSON for compatibility.
+    },
+    "yaml": {
+      "tabWidth": 2,                  // Sets indentation to 2 spaces in YAML files.
+      "singleQuote": false,           // Uses double quotes in YAML for consistency.
+      "printWidth": 80                // Limits line length in YAML files to 80 characters.
+    },
+    "scss": {
+      "tabWidth": 2,                  // Keeps SCSS files at 2 spaces for indentation.
+      "singleQuote": true,            // Uses single quotes in SCSS files.
+      "bracketSpacing": true          // Adds bracket spacing for readability.
+    },
+    "ignore": [
+      "**/node_modules/**",           // Ignores node_modules folder.
+      "**/dist/**",                   // Ignores dist folder.
+      "**/build/**",                  // Ignores build folder.
+      "**/*.min.js"                   // Ignores minified JavaScript files.
+    ],
+    "filepath": "src/**/*.*",         // Specifies where to apply the formatting (optional).
+    "experimentalBabelParserPluginsList": ["jsx", "typescript"] // Enables experimental parsing for modern features.
+  }
+  

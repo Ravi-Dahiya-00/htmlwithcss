@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        :root{
+            --primary-color:green;             /* this will make a variable color 
+                                                    for the complete css of this page we can use it anywhere in this page. */
+            --custom-width:300px
+        }
+        .container{
+            background-color: aliceblue;
+            border: 2px black solid;
+            height: 650px;
+            display: flex;
+            justify-content: center;
+
+        }
+        .box{
+            --primary-color:green;             /* this will make a variable color we can use it any where in the box */
+           --custom-width:300px
+            background-color: aqua; 
+            width: 350px;  
+            height: 350px;   
+            border: 1px solid var(--primary-color);      /* here we used the primary color */
+            margin: 10px;
+            padding: 10px;
+            /* box-shadow: -10px 15px brown; */            /* simple box shadow - means it will come to left. */
+            /* box-shadow: 10px 15px 50px green; */          /* this 50px will blur the shadow.  */
+            /* box-shadow: 10px 15px 5px 40px ; */              /* this 40px will tell how much the shadow will spread */
+            /* box-shadow: inset 10px 14px ; */                  /* this inset will bring the shadow inside the box */      
+            /* box-shadow: 10px 15px red , 5px 20px green;  */       /* this will make the two shadows of different units and colors. */
+     
+        }
+      /* we can also make text shadow m=by using text-shadow. */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="img.png" alt="">
+           <h2> Welcome to class</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sit pariatur voluptate similique. 
+            Tenetur vel tempora inventore cupiditate dicta ratione eveniet ipsum dolorem odio sed.</p>
+        </div>
+    </div>
+</body>
+</html>
