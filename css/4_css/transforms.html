@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{
+            height: 100vh;
+            width: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height: 400px;
+            width: 400px;
+            background-color: aliceblue;
+            border: 2px solid black;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin: auto;
+            transition: all 0.3s linear 1s;
+        }
+
+        .box:hover{
+            /* transform: rotate(360deg);        rotates the box */
+            transform: scale(2);               /*  increase the size of box by 2x*/
+            /* transform: scale(0.5);           it will decrease the size*/
+            /* transform: skew(45deg);       it will tilt by 45 degree */
+            transform: translate(500px,500px);     /*  it will move in the directions*/
+        }
+        p{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p>
+                this is transform's box
+            </p>
+        </div>
+    </div>
+</body>
+</html>
