@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      #completeform {
+        display: inline-block;
+      }
+      #completefieldset {
+        border-radius: 4vh;
+        border: 5px black solid;
+        background-color: #85ffbd;
+        background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+      }
+      .labeltext {
+        font-size: 18px;
+        font-weight: lighter;
+        padding: 8px;
+      }
+
+      .button1 {
+        padding: 10px 80px;
+        font-size: 18px;
+        border: 3px black solid;
+        border-radius: 8px;
+        box-shadow: 2px 2px 2px 2px rgb(49, 49, 63);
+        background-color: rgb(55, 236, 55);
+      }
+
+      #biotext {
+        width: 250px;
+        height: 150px;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      .inputtext {
+        border: 2px black solid;
+        border-radius: 20px;
+        background-color: rgb(186, 190, 220);
+        box-shadow: 2px 2px 2px 2px rgb(49, 49, 63);
+        padding-left: 30px; /* Add padding to the left */
+      }
+
+      .inputtext::placeholder {
+        color: rgb(42, 28, 28);
+        font-size: 15px;
+        font-style: italic;
+        opacity: 0.75;
+      }
+
+      #genderselector {
+        padding: 10px;
+        border: 2px black solid;
+        font-size: large;
+        border-radius: 20px;
+        background-color: rgb(186, 190, 220);
+        box-shadow: 2px 2px 2px 2px rgb(49, 49, 63);
+      }
+    </style>
+  </head>
+  <body>
+    <form id="completeform">
+      <fieldset id="completefieldset">
+        <h1>Registration Form</h1>
+
+        <label for="name" class="labeltext">Name</label>
+        <br />
+        <div
+          id="nameInputDiv"
+          style="position: relative; display: inline-block"
+        >
+          <i
+            class="ri-file-user-fill"
+            style="
+              position: absolute;
+              left: 10px;
+              top: 50%;
+              transform: translateY(-50%);
+            "
+          ></i>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="enter your name"
+            class="inputtext"
+          />
+        </div>
+
+        <br /><br /><br />
+
+        <label for="email" class="labeltext">E-mail</label>
+        <br />
+        <div style="position: relative; display: inline-block">
+          <i
+            class="ri-mail-unread-line"
+            style="
+              position: absolute;
+              left: 10px;
+              top: 50%;
+              transform: translateY(-50%);
+            "
+          ></i>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="enter your email"
+            class="inputtext"
+          />
+        </div>
+
+        <br /><br /><br />
+
+        <label for="password" class="labeltext"> Password</label>
+
+        <br />
+
+        <div style="position: relative; display: inline-block">
+          <i
+            class="ri-lock-password-fill"
+            style="
+              position: absolute;
+              left: 10px;
+              top: 50%;
+              transform: translateY(-50%);
+            "
+          ></i>
+          <input
+            type="password"
+            placeholder="enter your password"
+            class="inputtext"
+            style="padding-left: 30px"
+          />
+        </div>
+
+        <br /><br /><br />
+
+        <label for="gender" class="labeltext">Gender</label>
+        <br />
+        <select name="selector1" id="genderselector">
+          <option value="select">select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Others">Others</option>
+        </select>
+
+        <br /><br /><br />
+
+        <label for="bio" class="labeltext">Bio</label>
+        <br />
+        <textarea
+          name="bio"
+          id="biotext"
+          class="inputtext"
+          placeholder="tell about yourself"
+        ></textarea>
+
+        <br /><br /><br />
+        <button class="button1">submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
