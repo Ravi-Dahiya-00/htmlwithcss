@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodePal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <nav>
+      <h1>CodePal</h1>
+      <ul>
+        <li><a href="#" onclick="navigateTo('practice')">Practice</a></li>
+        <li><a href="#" onclick="navigateTo('challenges')">Challenges</a></li>
+        <li><a href="#" onclick="navigateTo('codeReview')">Code Review</a></li>
+        <li><a href="#" onclick="navigateTo('learningResources')">Learning Resources</a></li>
+        <li><a href="#" onclick="navigateTo('settings')">Settings</a></li>
+        <li><button id="login-btn" onclick="handleLogin()">Login</button></li>
+      </ul>
+    </nav>
+
+    <div id="content">
+      <div id="welcome" class="page">
+        <h2>Welcome to CodePal!</h2>
+        <p>CodePal is a platform for learning and practicing HTML and CSS with interactive challenges and AI-powered code review.</p>
+      </div>
+      <div id="practice" class="page hidden">
+        <h2>Practice</h2>
+        <div id="challenge-list"></div>
+        <textarea id="editor" placeholder="Write your code here..."></textarea>
+        <button onclick="runCode()">Run Code</button>
+        <div id="output"></div>
+      </div>
+      <!-- Add similar sections for Challenges, Code Review, and other pages -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

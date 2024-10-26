@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="signup-form">
+            <h1>Sign Up</h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6pBp8KBrGaTt-qQVYF5m_ghoOxb8xdzTbmQ&s" alt="AI-generated image" class="avatar">
+            <form id="form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="referralCode">Referral Code:</label>
+                    <input type="text" id="referralCode">
+                </div>
+                <p id="error-message" class="error"></p>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

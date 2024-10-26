@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #8EC5FC;
+            background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+            top: 0;
+            left: 0;
+        }
+
+        .box {
+            border: 1px black solid;
+            height: 50vh;
+            width: 50vw;
+            display: flex;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            overflow: hidden;
+        }
+
+        .text1, .image1 {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .text1 {
+            padding: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        .image1 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="text1">
+                <div>
+                    <h2>Get insights that help your business grow</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Vel repellat dolore quidem consequuntur nulla error ut laudantium,
+                        consequatur praesentium quo!
+                    </p>
+                </div>
+            </div>
+            <div class="image1">
+                <img src="img.png" alt="Image Description">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
