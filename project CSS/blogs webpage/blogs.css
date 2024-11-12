@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    max-width: 95vw;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+a{
+    text-decoration: none;
+}
+.header_container{
+    margin-bottom: 2.3rem;
+}
+
+.header_title{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.header_description{
+    max-width: 568px;
+    text-align: center;
+    color: rgb(132, 96, 96);
+    margin: 0 auto;
+}
+
+.main_container{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4,1fr);
+
+}
+
+.card_container{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+}
+
+.card_image_container{
+    position: relative;
+    overflow: hidden;                          
+    height: 12rem;
+}
+
+.card_image

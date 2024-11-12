@@ -201,7 +201,7 @@ border-bottom: green 5px solid;       /* to make border only on one direction */
         1. Try to come in same line if width is present in same line.
         2. width will be only taken upto the content.
         3. it does not changes with given width and height.
-        4. custom margins can be applied only in horizontal direction but padding can be  applied every where.*/
+        4. custom margins can be applied only in horizontal direction but padding cannot be  applied every where.*/
 
 
 

@@ -10,14 +10,14 @@
                                                             the width of the box it will wrap it into the new line. */
     /* justify-content: center;                                  this will move the content in the centre if we use column it will move accordingly  
                                                             to the vertical direction and if column is used in flex direction then it will move 
-                                                            acoordingly to the horizontal.*/
+                                                            accordingly to the horizontal.*/
 
 
     align-items: center;                                   /*  this will do just the opposite of the justify content*/
     /* align-items: stretch;                                    this will stretch the items */
    align-content: start;                                  /*  it will remove the spacing between the items while aligning*/
 
-    /* if we will specify both align itm as centre and justify content as centre it will be at centre of the web page. */
+    /* if we will specify both align item as centre and justify content as centre it will be at centre of the web page. */
 
 
 }
