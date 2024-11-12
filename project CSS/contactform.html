@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="subscript" href="">
+</head>
+
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: rgba(44, 11, 128, 0.538) ;
+        
+    }
+
+    .box{
+       display: flex;
+       border-radius: 10px;
+        height: 50vh;
+        width: 50vw;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+    }
+
+    .connect{
+        background-color: aqua;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        width: 250px;
+
+       
+
+    }
+
+    .connect_content{
+        margin: 10px;
+        font-size: 25px ;
+        overflow: auto;
+    }
+    .information{
+        background-color: aliceblue;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    .information_inputs{
+        margin: 20px;
+        background-color: antiquewhite;
+        width: 250px;
+
+    }
+    .submit_button{
+        background-color: aqua;
+        border-radius: 9px;
+        width: 60px;
+        height: 30px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="connect">
+                <h1 class="connect_content">Let's Chat</h1>
+                <p class="connect_content">whether you have a question , want to start a 
+                    project or simply want to connect
+                </p>
+                <br><br>
+                <p class="connect_content">Fell free to send me a message in the contact form </p>
+            </div>
+            
+            <div class="information">
+                <h1>Contact</h1>
+
+            <p>*Required</p>
+            
+
+            <label for="name"></label>
+            <input type="text" name="name" id="name" placeholder="Name*" class="information_inputs">
+
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="Email*" class="information_inputs">
+
+
+        <label for="company"></label>
+        <input type="text" name="Company" id="company" placeholder="Company" class="information_inputs">
+
+        <label for="phone"></label>
+        <input type="tel" name="phone" id="phone" placeholder="Phone" class="information_inputs">
+
+        <textarea name="message" id="message" class="information_inputs"></textarea>
+
+        <button class="submit_button">submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

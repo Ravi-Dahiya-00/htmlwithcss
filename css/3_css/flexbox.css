@@ -8,6 +8,7 @@
     flex-direction: row-reverse;                             /* this will reverse the boxes  */     
     flex-wrap: wrap;                                          /* this will wrap the box or text accordingly to screen size it will not decrease
                                                             the width of the box it will wrap it into the new line. */
+
     /* justify-content: center;                                  this will move the content in the centre if we use column it will move accordingly  
                                                             to the vertical direction and if column is used in flex direction then it will move 
                                                             accordingly to the horizontal.*/
@@ -34,7 +35,7 @@
 }
 
 #box1{
-    background-color: aqua;
+    background: linear-gradient(to left, green, red, yellow);
     order: 1;                            /* it will change the order of this box if we want to move it at last we can use -1. */
     flex-shrink: 4;                      /* this box will shrink 4 times faster as then any other box */
     flex-grow: 1;                         /* it will make the boxes to take all the space of the container from starting point to ending point */
@@ -56,5 +57,5 @@
     background-color: brown;
     flex-grow: 1;
     flex-basis: 400px;                       /*  we can assign its width*/
-          
+
 }

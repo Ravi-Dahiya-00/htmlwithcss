@@ -1,7 +1,7 @@
 /* css - “Cascading Style Sheets” */
 
 
-/* three time of css is there :
+/* by three type we can do css , these types are:
 1. inline css: css with every tag by using style attribute in between the tag.
 2. internal css: css can be done by providing a style tag in the head. in this name the tag which we want to do css 
                     h1{ color: green;}|
@@ -24,7 +24,7 @@ if we want to give more importance to external or internal we can use !important
             .class{ color: green;}
 4. group: style multiple elements using comma ,
             p,h1{ color : green;}
-            p.paraclass{ color: green;} */
+            p, .para { color: green;} */
 
 
 
@@ -199,7 +199,7 @@ border-bottom: green 5px solid;       /* to make border only on one direction */
 /*  2. Inline Elements: 
             properties:
         1. Try to come in same line if width is present in same line.
-        2. width will be only taken upto the content.
+        2. width will be only taken up to the content.
         3. it does not changes with given width and height.
         4. custom margins can be applied only in horizontal direction but padding cannot be  applied every where.*/
 
@@ -299,10 +299,10 @@ border-bottom: green 5px solid;       /* to make border only on one direction */
         left: 100px;
     }
 
-    /* this position will also be fixed like fixed position but this will only remain fixed upto the parent 
+    /* this position will also be fixed like fixed position but this will only remain fixed up to the parent 
         container that is div function here.
         
-        but in fixed it reamins on complete page like we see home page.*/
+        but in fixed it remains on complete page like we see home page.*/
 
 
 

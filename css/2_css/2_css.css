@@ -24,6 +24,6 @@
     height: 300px;
     overflow: hidden;        /*  it will hide all the item that is going out of the box.*/
     overflow: scroll;         /* this will make our content to scroll that is going out of the box */
-    overflow: auto;            /*  this will do automattically all things what to do*/
+    overflow: auto;            /*  this will do automatically all things what to do*/
 
 }
