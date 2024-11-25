@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+    </style>
+</head>
+<body>
+    <form name="myform" onsubmit="return validateform()">
+    <label for="name">Enter your Name</label>
+    <br>
+    <input type="text" name="" id="name">
+    <br><br><br><br>
+    <label for="password">Enter Your Password</label>
+    <br>
+    <input type="password" name="" id="password">
+    <br><br><br>
+
+<button>Register</button>
+
+</form>
+    <script>
+        function validateform(){
+            var a=document.myform.name.value
+            var b=document.myform.password.value
+            
+                if (a==null || a==""){
+                    alert("name can not be blank");
+                    return false;
+                }
+                
+                if (b==null){
+                    alert=("password can not be empty");
+                    return false;
+                }
+
+                else if (b<=6){
+                    alert=("password can not be of less than 6 characters");
+                    return false;
+                }
+
+                return true
+        }
+    </script>
+</form>
+</body>
+</html>

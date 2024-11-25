@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+      
+
+        tbody{
+            border: 1px black solid;
+        } */
+        table{
+            width: 500px;
+            height: 300px;
+            border: 1px black solid;
+            border-spacing: 0;
+          border-right: none;
+        }
+        head{
+        text-align: center;
+        }
+
+    .table_body{
+        
+        text-align: center;
+        
+    }
+    .head_1{
+        border-right: 1px solid black;
+
+    }
+        
+        .row3_item3{
+            border-right: none;
+        }
+
+        .row1_item4{
+            border-right: 1px solid black;
+        }
+
+        .row2_item4{
+            border-right: 1px solid black;
+        }
+        .row4_item4{
+            border-right: 1px solid black;
+        }
+        .row5_item3{
+            border-right: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="table_container"  >
+        <table class="table_starts" border="1">
+            <thead class="table_head" >
+                <th colspan="3" >Appetizers</th>
+                <th class="head_1" >Main Course</th>
+            </thead>
+            <tbody class="table_body">
+                <tr class="table_row1">
+                    <td class="row1_item1">Item</td>
+                    <td class="row1_item2">Price</td>
+                    <td class="row1_item3">Item</td>
+                    <td class="row1_item4">Price</td>
+                </tr>
+
+                <tr class="table_row2">
+                    <td class="row2_item1">Spring Rolls</td>
+                    <td class="row2_item2">$5</td>
+                    <td class="row2_item3" rowspan="2">Grilled Chicken</td>
+                    <td class="row2_item4">$12</td>
+                </tr>
+
+                <tr class="table_row3">
+                    <td class="row3_item1">Garlic Bread</td>
+                    <td class="row3_item2">$4</td>
+                    <td class="row3_item3">  </td>
+                </tr>
+
+                <tr class="table_row4">
+                    <td class="row4_item1" rowspan="2">Pasta</td>
+                    <td class="row4_item2">$10</td>
+                    <td class="row4_item3">Salmon</td>
+                    <td class="row4_item4">$15</td>
+                </tr>
+
+                <tr class="table_row5">
+                    <td class="row5_item1">$11</td>
+                    <td class="row5_item2">Steak</td>
+                    <td class="row5_item3">$20</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
