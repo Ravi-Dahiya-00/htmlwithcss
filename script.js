@@ -16,6 +16,7 @@ function handleLogin() {
     document.getElementById('login-btn').textContent = 'Logout';
     localStorage.setItem('user', JSON.stringify(user));
   }
+  
 }
 
 function runCode() {

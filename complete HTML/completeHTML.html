@@ -72,7 +72,7 @@ They are composed of tags, which include an opening tag, content (optional), and
          <h6>this is sixth heading</h6>
                        <!-- after h6 tag all h7,h8 tags are behaved as paragraph tag -->
      
-     
+    
      
      
                        <a href="https://www.youtube.com/">youtube.com</a>
@@ -145,21 +145,24 @@ They are composed of tags, which include an opening tag, content (optional), and
      
      <dl>
          <p>places i want to avoid</p>
+         <br><br>
+        
+
        <dt>north pole </dt>
        <dd>i hear this is <strong>cold!</strong></dd>
        <h4><dt>south pole</dt></h4>
        <dd>this is also <strong>cold!</strong></dd>
        
         </dl>
-       
-       
+    
+         
         <!-- <dl>: The outer element that defines the description list.
        <dt>: Defines a term or label for the description. Typically used for headings or keywords.
        <dd>: Defines the description or explanation for the term. Can contain text, images, or other HTML elements. -->
        
      
      
-         <table>
+         <table >
                   <tr>                      <!--table row       -->
                      <td>Sr. No.</td>       <!-- Table Data Cell --> 
                      <td>Name</td>
@@ -189,7 +192,7 @@ They are composed of tags, which include an opening tag, content (optional), and
      
          <img src="https://imgs.search.brave.com/b125XPj0IJ95T1gKRAHX5zA7hGyi7dJ96p0VKcYyGGY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly
          9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/dHdvLXRvbmUtaW5r/LWNsb3VkLmpwZz93/aWR0aD0xMDAwJmZv/cm1hdD1wanBnJmV4/
-         aWY9MCZpcHRjPTA" height="100px" alt="no Image">
+         aWY9MCZpcHRjPTA" height="100px" alt="img.png">
       
                 <!-- this image tag is used to add a image to the webpage.
                      src is used for the link of the resource.
@@ -216,7 +219,6 @@ They are composed of tags, which include an opening tag, content (optional), and
      <p>
          <b>this b tag can also be used to bold the line</b>
      </p>
-     
      
      <p>
          <em> hello friends this is written in italic words</em>
@@ -274,7 +276,7 @@ They are composed of tags, which include an opening tag, content (optional), and
         <h1>to write both p and h1 tag we write p>h1</h1>
      </p>
 
-     <h1>when i use h1+h2 tag i get both h1 and h2 tags.</h1>
+     <h1>when i use <span style="color: aqua;">h1+h2</span> tag i get both h1 and h2 tags.</h1>
      <h2>these are shortcuts that save our time like h1 + h2 </h2>
 
 
@@ -359,7 +361,7 @@ They are composed of tags, which include an opening tag, content (optional), and
 
 
 <!-- let's start Tables in HTML -->
-<table border="1">           <!-- this border tells us the width of the border -->
+<table border="1" style="border-collapse: collapse;">           <!-- this border tells us the width of the border -->
         <thead>
             <!-- The thead element is used to group header content in an HTML table. -->
             <th>Student ID</th>
@@ -402,9 +404,10 @@ They are composed of tags, which include an opening tag, content (optional), and
         <td colspan="2">Custom</td>
        </tr>
                         <!-- this colspan will extend column upto how much column we want to expand. -->
-    </tbody></tbody>
-     </table>
+    </tbody>
+     </table>          
 
+     <br><br><br>      
 
 
      <table border="1">
@@ -451,7 +454,7 @@ They are composed of tags, which include an opening tag, content (optional), and
         <br>
         <br>
         <label for="password">Enter Password</label>
-        <input type="text" id="password" placeholder="enter your password"> 
+        <input type="password" id="password" placeholder="enter your password"> 
         <!-- in label "for" and in input "id" must have same address. -->
          <!-- placeholder attributes describe the label more briefly inside the input tag. -->
         <br>
@@ -465,7 +468,7 @@ They are composed of tags, which include an opening tag, content (optional), and
 
 
 
-     <form >
+     <form style="border: 2px black solid;">
 
         <fieldset>
             <LEGEND><h3>html form</h3></LEGEND>
@@ -491,18 +494,19 @@ They are composed of tags, which include an opening tag, content (optional), and
       <br>
 
       <textarea name="text1" id="text1" cols="10" rows="10" placeholder="enter your feedback......."></textarea>
-     </form>
     </fieldset>
+   
+    </form>
 
 
-
+<br><br><br>
 
 
 
 
 <!-- input tags in html -->
 
-    <form> 
+    <form style="border: 2px black solid;"> 
         <label for="textfield1">text field</label>
         <input type="text" name="textfield1" id="textfield1">
 <br><br>
