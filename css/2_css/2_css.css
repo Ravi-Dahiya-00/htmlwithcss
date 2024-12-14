@@ -10,7 +10,7 @@
 .floatimg2{
     float: right;
     height: 300px;
-    clear: right;         /* it will clear all the items from the right side */    
+    /* clear: right;         it will clear all the items from the right side     */
 
 }
 

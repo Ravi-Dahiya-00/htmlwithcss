@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button with Alert</title>
+    <style>
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <button id="bodybutton" onclick="class_back()"> hello</button>
+
+
+    <h1>Button with Alert</h1>
+    <button id="button1" onclick="showAlert()" >Click Me</button>
+
+    <h1 id="para_1" onclick="para_fun()">
+        hello guys
+    </h1>
+
+    <script>
+        let buttons=document.getElementById("button1")
+        function showAlert() {
+                buttons.style.backgroundColor="red";
+            
+            // alert("Hello! You clicked the button.");
+        }
+
+
+       function para_fun(){
+        let para_ji=document.getElementById("para_1")
+        para_ji.onclick.backgroundColor="red";
+       }
+
+
+       function class_back(){
+        if(document.body.style.backgroundColor=="red"){
+            document.body.style.backgroundColor="";
+            document.body.style.color="black"
+        }
+        else{
+        document.body.style.backgroundColor="red"
+        document.body.style.color="white"}
+       }
+
+       
+    </script>
+</body>
+</html>
